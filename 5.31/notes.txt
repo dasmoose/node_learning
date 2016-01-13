@@ -1,0 +1,13 @@
+Eventing
+In node there are two kinds of events
+System events
+  -- libuv
+  -- c++ core
+  -- events coming from the computer system
+  -- e.g. file finished reading
+Custom events
+  -- js core
+  -- Events emitting from your code
+  -- Event Emitter
+Often events emitted from c++ emits an js event
+Js doesn't have eventing, but you can fake it with node event emitter

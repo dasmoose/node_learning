@@ -1,0 +1,33 @@
+In util.js there is a method that is called inherits
+takes two constructors
+  -- the constructor that wants to inherit
+  -- the constructor that is inherited from, contains the
+     methods and properties that you want
+
+If you call inherits on an object after you have set up some methods on prototype
+than they will be overwritten.
+           obj1
+          /    \
+      proto    prop3
+     /
+   obj2
+  /     \
+prop1  prob2
+
+Proto gets created as an empty object and connects the two objects
+
+Basically it just adds the objects prototype to the prototype chain of the
+first object
+                greeter1
+              /
+            Greetr.prototype
+          /                 \
+    EventEmitter.prototype   greet()
+    /     \
+  on     emit
+
+greeter1.on()
+greeter1.emit()
+greeter1.greet()
+
+Many key objects in node inherits from EventEmitter

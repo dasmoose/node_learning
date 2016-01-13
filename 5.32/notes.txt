@@ -1,0 +1,2 @@
+These concepts are essential to understanding the
+Event Emitter

@@ -1,0 +1,22 @@
+prototypal inheritance
+        obj2       obj
+            \     /  \
+            proto1  prop
+            /     \
+      proto2      prop1
+            \
+            prop2
+
+obj.prop1
+obj.prop2
+
+When a method or property is accessed the object itself is looked at first
+then if its not found there it looks lower in the chain. Looks at its
+prototype. When you set a property on the obj that is the same name as the
+prototype its hiding it, not overriding it.
+
+        jane          john  Prototype chain -v
+      /      \       /     \
+firstname     person      firstname
+            /    |     \
+      firstname lastname greet()

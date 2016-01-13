@@ -1,0 +1,7 @@
+// Alias method
+EventEmitter.prototype.on =
+EventEmitter.prototype.addListener;
+
+// Magic string
+A string that has some special meaning in our code
+typos could crop up easily
