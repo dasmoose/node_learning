@@ -1,0 +1,20 @@
+module.exports is passed as exports for short hand.
+They do point to the same place in memory.
+
+module.exports     exports
+        \         /
+          object
+
+When you set a variable to a new value it is a new spot in memory.
+Now the references between the two are broken.
+exports = function() {}
+module.exports     exports
+        \                 \
+          object         object
+
+The thing that is returned from require is module.exports so it
+will be a empty object since the reference is broken.
+
+You can mutate exports instead of just setting it to something new.
+
+exports.greet = function() {}

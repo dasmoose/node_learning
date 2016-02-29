@@ -1,0 +1,8 @@
+Both of these methods allow you to change the 'this' or context of
+a function running.
+  .call
+    you pass params as a list
+    greet.call({name: 'Jane Doe'}, param1, param2)
+  .apply
+    you pass params as a array
+    greet.call({name: 'Jane Doe'}, [param1, param2])

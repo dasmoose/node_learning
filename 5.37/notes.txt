@@ -1,0 +1,6 @@
+ES6 (ECMAScript 2015)
+babeljs.io converts ES6 features to old code
+
+New features:
+  Template literal- a way to concatenate strings together. Instead
+  of the + operator.
